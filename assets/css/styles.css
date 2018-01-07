@@ -1,0 +1,429 @@
+body {
+	padding-top: 1.5rem;
+	background: #C9D6FF; 
+	background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);
+	background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+}
+
+h1.text-center {
+	margin-bottom: 3.5rem;
+	word-spacing: 0.5rem;
+	letter-spacing: -0.05rem;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.panel-login {
+	border-radius: 1rem;
+	border-color: #ccc;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+
+.panel-login>.panel-heading {
+	color: #00415d;
+	background-color: #fff;
+	border-color: #fff;
+	text-align:center;
+}
+
+.panel-login>.panel-heading a{
+	text-decoration: none;
+	color: #666;
+	font-weight: bold;
+	font-size: 15px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+
+.panel-login>.panel-heading a.active{
+	color: #029f5b;
+	font-size: 18px;
+}
+
+.panel-login>.panel-heading hr{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	clear: both;
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+	background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+	height: 45px;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+	outline:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-color: #ccc;
+}
+.btn-login {
+	background-color: #59B2E0;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #59B2E6;
+}
+.btn-login:hover,
+.btn-login:focus {
+	color: #fff;
+	background-color: #53A3CD;
+	border-color: #53A3CD;
+}
+
+.btn-register {
+	background-color: #1CB94E;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #1CB94A;
+}
+.btn-register:hover,
+.btn-register:focus {
+	color: #fff;
+	background-color: #1CA347;
+	border-color: #1CA347;
+}	
+
+#login_email.invalid, #login_password.invalid, #register_email.invalid, #register_password.invalid, #fullname.invalid, #address.invalid, #image.invalid, #register_password2.invalid, #department.invalid, #dep.invalid, #role.invalid {
+	border: 2px solid red;
+}
+
+#login_email.valid, #login_password.valid, #register_email.valid, #register_password.valid, #fullname.valid, #address.valid, #image.valid, #register_password2.valid, #department.valid, #dep.valid, #role.valid {
+	border: 2px solid green;
+}
+
+.glyphicon {  
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+small {
+	line-height: 1.428571429;
+	color: #999;
+}
+
+.margin {
+	margin-top: 10rem;
+}
+
+
+
+.card {
+	padding-top: 20px;
+	margin: 10px 0 20px 0;
+	background-color: rgba(214, 224, 226, 0.2);
+	border-top-width: 0;
+	border-bottom-width: 2px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.card .card-heading {
+	padding: 0 20px;
+	margin: 0;
+}
+
+.card .card-heading.simple {
+	font-size: 20px;
+	font-weight: 300;
+	color: #777;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.card .card-heading.image img {
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	margin-right: 15px;
+	vertical-align: top;
+	border: 0;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.card .card-heading.image .card-heading-header {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.card .card-heading.image .card-heading-header h3 {
+	margin: 0;
+	font-size: 14px;
+	line-height: 16px;
+	color: #262626;
+}
+
+.card .card-heading.image .card-heading-header span {
+	font-size: 12px;
+	color: #999999;
+}
+
+.card .card-body {
+	padding: 0 20px;
+	margin-top: 20px;
+}
+
+.card .card-media {
+	padding: 0 20px;
+	margin: 0 -14px;
+}
+
+.card .card-media img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.card .card-actions {
+	min-height: 30px;
+	padding: 0 20px 20px 20px;
+	margin: 20px 0 0 0;
+}
+
+.card .card-comments {
+	padding: 20px;
+	margin: 0;
+	background-color: #f8f8f8;
+}
+
+.card .card-comments .comments-collapse-toggle {
+	padding: 0;
+	margin: 0 20px 12px 20px;
+}
+
+.card .card-comments .comments-collapse-toggle a,
+.card .card-comments .comments-collapse-toggle span {
+	padding-right: 5px;
+	overflow: hidden;
+	font-size: 12px;
+	color: #999;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.card-comments .media-heading {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.card.people {
+	position: relative;
+	display: inline-block;
+	width: 170px;
+	height: 300px;
+	padding-top: 0;
+	margin-left: 20px;
+	overflow: hidden;
+	vertical-align: top;
+}
+
+.card.people:first-child {
+	margin-left: 0;
+}
+
+.card.people .card-top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 170px;
+	height: 150px;
+	background-color: #ffffff;
+}
+
+.card.people .card-top.green {
+	background-color: #53a93f;
+}
+
+.card.people .card-top.blue {
+	background-color: #427fed;
+}
+
+.card.people .card-info {
+	position: absolute;
+	top: 150px;
+	display: inline-block;
+	width: 100%;
+	height: 101px;
+	overflow: hidden;
+	background: #ffffff;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.card.people .card-info .desc {
+	display: block;
+	margin: 8px 14px 0 14px;
+	overflow: hidden;
+	font-size: 14px;
+	line-height: 16px;
+	color: #737373;
+	text-overflow: ellipsis;
+}
+
+.card.people .card-bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: inline-block;
+	width: 100%;
+	padding: 10px 20px;
+	line-height: 29px;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.card.hovercard {
+	position: relative;
+	padding-top: 0;
+	overflow: hidden;
+	text-align: center;
+	background-color: rgba(214, 224, 226, 0.2);
+}
+
+.card.hovercard .cardheader {
+	background: url("../images/NY.jpg") center;
+	background-size: cover;
+	height: 165px;
+}
+
+.card.hovercard .avatar {
+	position: relative;
+	top: -50px;
+	margin-bottom: -50px;
+}
+
+.card.hovercard .avatar img {
+	width: 100px;
+	height: 100px;
+	max-width: 100px;
+	max-height: 100px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	border: 4px solid rgba(255,255,255,0.5);
+}
+
+.card.hovercard .info {
+	padding: 4px 8px 10px;
+}
+
+.card.hovercard .info .title {
+	margin-bottom: 4px;
+	font-size: 24px;
+	line-height: 1;
+	color: #262626;
+	vertical-align: middle;
+}
+
+.card.hovercard .info .desc {
+	overflow: hidden;
+	font-size: 14px;
+	line-height: 22px;
+	color: #737373;
+	text-overflow: ellipsis;
+}
+
+.card.hovercard .bottom {
+	padding: 0 20px;
+	margin-bottom: 17px;
+}
+
+.well {
+	margin-top: 5rem;
+}
+
+span.navbar-brand a {
+	color: #fff;
+}
+
+.table > tbody > tr > td, th {
+	text-align: center;
+	vertical-align: middle;
+}
+
+#output {
+	height: 500px;
+	overflow-y: scroll;
+}
+
+#output ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+.chat_message_header {
+	font-size: 1.05rem;
+}
+
+#output span {
+	background: #fff;
+	padding: 0.1rem;
+	border-radius: .5rem;
+}
+
+.message_content {
+	display: inline-block;
+	border-radius: 0.5rem;
+	background-color: #E0E0E0;
+	box-sizing: border-box;
+	padding: 0.2rem 0.5rem;
+}
+
+.current_user {
+	color: #1565C0;
+}
+
+#chat {
+	width: 100%;
+	height: 150px;
+	font-size: 1.7rem;
+	border-radius: 0.5rem;
+	border: 3px solid #ccc;
+	outline: none;
+}
+
+#output hr {
+	margin: 0;
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+h1.style {
+	margin: 0;
+}
